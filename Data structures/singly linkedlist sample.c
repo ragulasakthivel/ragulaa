@@ -75,6 +75,18 @@ void deletenode()
   
 }
 
+int countt()
+{
+    int cnt=1;
+    temp=head;
+    while(temp->next!=NULL)
+    {
+        cnt++;
+        temp=temp->next;
+    }
+    printf("%d" ,cnt);
+}
+
 int main(void)
 {
    int count=0;
@@ -89,6 +101,7 @@ display();
 deleteinfront(head);
 //deletenode();
 display();
+countt();
 }
 
 
